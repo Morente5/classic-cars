@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Bazar';
+    src: url('/css/webfont/Bazar.eot?#iefix') format('embedded-opentype'),
+        url('/css/webfont/Bazar.woff') format('woff'),
+        url('/css/webfont/Bazar.ttf') format('truetype'),
+        url('/css/webfont/Bazar.svg#Bazar') format('svg');
+    font-weight: normal;
+    font-style: normal; }
+
+
+body {
+    margin:0;
+    box-sizing: border-box;
+    background-color: #F6EDD8;
+    font-family: 'Bazar';
+}
+
+/*
+NAV
+*/
+
+nav ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8D3131;
+    text-align: center
+}
+
+nav ul.topnav li {
+    display: inline-block;
+}
+
+nav ul.topnav li a {
+    display: inline-block;
+    color: #F6EDD8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+nav ul.topnav li a:hover {
+    background-color: #984545;
+}
+
+nav ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+    nav ul.topnav li:not(:nth-child(3)) {
+        display: none;
+    }
+    nav ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    nav ul.topnav.responsive {position: relative;}
+    nav ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    nav ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
