@@ -9,10 +9,31 @@
 
 
 body {
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     background-color: #F6EDD8;
     font-family: 'Bazar';
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1, h2 {
+    font-family: 'Bazar';
+    text-align: center;
+    text-shadow: 3px 5px #FFFFFF;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
 }
 
 /*
@@ -47,6 +68,12 @@ nav ul.topnav li a:hover {
 }
 
 nav ul.topnav li.icon {display: none;}
+
+#video-background {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
 
 @media screen and (max-width:680px) {
     nav ul.topnav li:not(:nth-child(3)) {
