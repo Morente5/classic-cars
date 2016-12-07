@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main-style.css">
+	<script src="scripts/functions.js"></script>
 	<title>Classic-cars</title>
 </head>
+
 <body>
-	<nav>
-		<ul>
-			<li><a href="cars.html">Cars</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="about.html">About us</a></li>
-		</ul>
-		<ul>
-			<li><a href="#">English</a></li>
-			<li><a href="#">Spanish</a></li>
-		</ul>
-	</nav>
-	<section>
-		<header>
-			<h2>CONTACT</h2>
-		</header>
-		<form>
-		  <input type="text" name="name" placeholder="Name">
-		  <input type="tel" name="phone" placeholder="Phone">
-		  <input type="email" name="email" placeholder="Email">
-		  <select name="provincia">
+
+<nav>
+	<ul class="topnav" id="myTopnav">
+	 	<li><a href="cars.html">Cars</a></li>
+	 	<li><a href="services.html">Services</a></li>
+	 	<li><a href="index.html">Home</a></li>
+	 	<li><a class="active" href="contact.html">Contact</a></li>
+	 	<li><a href="about.html">About us</a></li>
+	 	<li class="icon">
+			<a href="javascript:void(0);" style="font-size:15px;" onclick="openMenu()">☰</a>
+	  	</li>
+	</ul>
+
+	<ul>
+		<li><a href="#">English</a></li>
+		<li><a href="#">Spanish</a></li>
+	</ul>
+</nav>
+
+<section>
+	<header>
+		<h2>CONTACT</h2>
+	</header>
+	<form>
+		<input type="text" name="name" placeholder="Name">
+		<input type="tel" name="phone" placeholder="Phone">
+		<input type="email" name="email" placeholder="Email">
+		<select name="provincia">
 			<option value='0'>Provincia</option>
 			<option value='2'>Álava</option>
 			<option value='3'>Albacete</option>
@@ -80,22 +90,25 @@
 			<option value='51'>Vizcaya</option>
 			<option value='52'>Zamora</option>
 			<option value='53'>Zaragoza</option>
-			</select>
-		  <input type="checkbox" name="privacy" placeholder="Name">
-		  <label for="privacy">I accept the Privacy Policy</label>
-		  <textarea name="message" placeholder="Message"></textarea>
-		</form>
-	</section>
-	<footer>
-		<p>Classic Cars Granada 2016</p>
-		<div id="social">
-		<ul>
-			<li><a href="#"></a></li>
-			<li><a href="#"></a></li>
-			<li><a href="#"></a></li>
-			<li><a href="#"></a></li>
-		</ul>
-		</div>
-	</footer>
+		</select>
+		<input type="checkbox" name="privacy" placeholder="Name">
+		<label for="privacy">I accept the Privacy Policy</label>
+		<textarea name="message" placeholder="Message"></textarea>
+	</form>
+</section>
+
+<footer>
+	<p>Classic Cars Granada 2016</p>
+	<div id="social">
+	<ul>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+	</ul>
+	</div>
+</footer>
+
 </body>
+
 </html>
