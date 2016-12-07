@@ -57,10 +57,10 @@ nav ul.topnav li a {
     display: inline-block;
     color: #F6EDD8;
     text-align: center;
-    padding: 14px 16px;
+    padding: 30px 40px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 nav ul.topnav li a:hover {
@@ -75,7 +75,7 @@ nav ul.topnav li.icon {display: none;}
     width: 100%;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:720px) {
     nav ul.topnav li:not(:nth-child(3)) {
         display: none;
     }
@@ -83,9 +83,7 @@ nav ul.topnav li.icon {display: none;}
         float: right;
         display: inline-block;
     }
-}
 
-@media screen and (max-width:680px) {
     nav ul.topnav.responsive {position: relative;}
     nav ul.topnav.responsive li.icon {
         position: absolute;
