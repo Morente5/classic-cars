@@ -2,7 +2,7 @@
 SEARCH BOX
 */
 
-input[type=text] {
+section input[type=text] {
     width: 50%;
     border-radius: 4px;
     font-size: 14px;
@@ -16,7 +16,7 @@ input[type=text] {
     display: inline-block;
 }
 
-form{
+section form{
     text-align: center;
     margin-left: auto;
     margin right: auto;
@@ -27,29 +27,52 @@ form{
 CARDS
 */
 
-.card-wrapper {
+section .card-wrapper {
+    text-align: center;
+}
+
+section .card {
+    /* Sombras de tarjetas */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 20%;
-    text-align:center;
-    margin-top: 1%;
-}
-.card{
-    width: 270px;
     background-color: white;
+    margin: 5px;
+    border: 1px solid #ccc;
     display: inline-block;
-    margin: 1%;
+    width: 23%;
 }
-.card:hover {
+section .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.container {
+section .container {
     padding: 2px 16px;
 }
 
-img{
+section img{
     margin: 3%;
     width: 94%;
     height: 97%;
+}
+
+/*
+TABLET
+*/
+
+@media screen and (max-width: 1024px) {
+    section .card {
+        width: 45%;
+        min-width: auto;
+        max-width: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 720px) {
+    section .card {
+        width: 98%;
+        min-width: auto;
+        max-width: auto;
+    }
 }
