@@ -76,6 +76,10 @@ nav ul.topnav li.icon {
     display: none;
 }
 
+nav ul.topnav li.icon a i {
+    font-size: 1.4em;
+}
+
 nav ul.lang {  /* TODO */
     display:none;
 }
