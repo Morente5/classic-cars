@@ -8,7 +8,6 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i');
 
 html, body {
     height: 100%;
@@ -65,17 +64,36 @@ nav ul.topnav li {
 
 nav ul.topnav li a {
     display: inline-block;
-    color: #F6EDD8;
+    color: #faf6eb;
     text-align: center;
-    padding: 30px 40px;
+    padding: 30px 25px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 20px;
     font-family: 'Bazar';
+    width: 80px;
+    vertical-align: top
+}
+
+nav ul.topnav li:not(:nth-child(3)) a.active {
+    background-color: #459898;
 }
 
 nav ul.topnav li a:hover {
     background-color: #984545;
+}
+
+nav ul.topnav li a.home {
+    width: 200px;
+    padding: 0;
+    margin:0;
+}
+
+nav ul.topnav li a.home img{
+    display: flex;
+    margin: 0;
+    height: 81.6px;
+    width: 200px;
 }
 
 nav ul.topnav li.icon {
@@ -99,7 +117,7 @@ footer {
     height: 1px;
     margin: 0;
     background-color: #8D3131;
-    color: #F6EDD8;
+    color: #faf6eb;
 }
 
 footer p {
@@ -125,8 +143,25 @@ footer ul#social li {;
 footer ul#social li a i{
     margin: 5px;
     font-size: 2em;
-    color: #F6EDD8;
+    color: #faf6eb;
 }
+
+footer ul#social li a i.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+footer ul#social li a i.fa-facebook:hover {
+    color: #3b5998;
+}
+
+footer ul#social li a i.fa-instagram:hover {
+    color: black;
+}
+
+footer ul#social li a i.fa-youtube:hover {
+    color: #FFFFFF;
+}
+
 
 #video-background {
     height: 100%;
@@ -134,13 +169,13 @@ footer ul#social li a i{
     width: 100%;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:1050px) {
     section {
         margin-left: 5%;
         margin-right: 5%;
     }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width:760px) {
     section {
         margin-left: 0;
         margin-right: 0;
@@ -159,6 +194,15 @@ footer ul#social li a i{
         top: 0;
     }
 
+    nav ul.topnav li a.home {
+        width: 140px;
+    }
+
+    nav ul.topnav li a.home img{
+        height: 61.6px;
+        width: 140px;
+    }
+    
     nav ul.topnav.responsive {position: relative;}
     nav ul.topnav.responsive li.icon {
         position: absolute;
@@ -172,6 +216,10 @@ footer ul#social li a i{
     nav ul.topnav.responsive li a {
         display: block;
         text-align: left;
+    }
+
+    nav ul.topnav.responsive li:nth-child(3) a {
+        display: none;
     }
 
     h1, h2 {
