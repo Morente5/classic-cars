@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Bazar';
-    src: url('/css/webfont/Bazar.eot?#iefix') format('embedded-opentype'),
-        url('/css/webfont/Bazar.woff') format('woff'),
-        url('/css/webfont/Bazar.ttf') format('truetype'),
-        url('/css/webfont/Bazar.svg#Bazar') format('svg');
+    src: url('../fonts/Bazar.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bazar.woff') format('woff'),
+        url('../fonts/Bazar.ttf') format('truetype'),
+        url('../fonts/Bazar.svg#Bazar') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -91,11 +91,29 @@ footer {
     padding: 3px 16px;
 }
 
-footer ul {
+footer p {
+    display: inline-block;
+    font-family: 'Bazar', sans-serif;
+}
+
+footer ul#social {
+    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    vertical-align: bottom;
+
+}
+
+footer ul#social li {;
     float: left;
+    padding:5px
+}
+
+footer ul#social li a i{
+    margin: 5px;
+    font-size: 2em;
+    color: #F6EDD8;
 }
 
 #video-background {
@@ -121,6 +139,9 @@ footer ul {
     nav ul.topnav li.icon {
         float: right;
         display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     nav ul.topnav.responsive {position: relative;}
