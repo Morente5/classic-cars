@@ -27,7 +27,7 @@ section form{
 CARDS
 */
 
-section .card-wrapper {
+section {
     text-align: center;
 }
 
@@ -52,7 +52,6 @@ section .container {
 section img{
     margin: 3%;
     width: 94%;
-    height: 97%;
 }
 
 /*
