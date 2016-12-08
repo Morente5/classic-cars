@@ -10,7 +10,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i');
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: table;
+    width: 100%;
     margin: 0;
     box-sizing: border-box;
     background-color: #F6EDD8;
@@ -26,7 +32,7 @@ section {
 
 h1, h2 {
     margin-top: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-family: 'Bazar', sans-serif;
     text-align: center;
     text-shadow: 3px 5px #FFFFFF;
@@ -89,22 +95,24 @@ FOOTER
 */
 
 footer {
+    display: table-row;
+    height: 1px;
     margin: 0;
     background-color: #8D3131;
     color: #F6EDD8;
-    padding: 3px 16px;
 }
 
 footer p {
     display: inline-block;
     font-family: 'Bazar', sans-serif;
+    padding: 3px 16px;
 }
 
 footer ul#social {
     float: right;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 3px 16px;
     vertical-align: bottom;
 
 }
@@ -126,19 +134,22 @@ footer ul#social li a i{
     width: 100%;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:960px) {
     section {
         margin-left: 5%;
         margin-right: 5%;
     }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:740px) {
     section {
         margin-left: 0;
         margin-right: 0;
     }
     nav ul.topnav li:not(:nth-child(3)) {
         display: none;
+    }
+    nav ul.topnav li a {
+        padding: 20px 30px;
     }
     nav ul.topnav li.icon {
         float: right;
@@ -161,5 +172,36 @@ footer ul#social li a i{
     nav ul.topnav.responsive li a {
         display: block;
         text-align: left;
+    }
+
+    h1, h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    footer {
+        padding: 0 10px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    footer ul#social li {;
+        padding:3px
+    }
+
+    footer ul#social li a i{
+        margin: 4px;
+        font-size: 1.5em;
+        color: #F6EDD8;
     }
 }
