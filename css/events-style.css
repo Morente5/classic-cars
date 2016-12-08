@@ -1,0 +1,29 @@
+article {
+    overflow: hidden;
+    margin:1%;
+}
+img {
+    width: 40%;
+    height: 25%;
+    float: left;
+    margin: 1%;
+    border-radius: 10px;
+}
+img#rightside{
+    float: right;
+}
+hr{
+    margin-left: 1%;
+    width: 55%;
+    background-color: #8D3131 ;
+    height: 2px;
+}
+h4{
+    margin-left: 1%;
+    font-family: 'Bazar', sans-serif;
+}
+p{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+}
