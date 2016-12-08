@@ -9,9 +9,9 @@ input[type=text] {
     border: 1px solid white;
     background-color: white;
     background-image: url(http://www.w3schools.com/howto/searchicon.png);
-    background-position: 95% 6px; /* cambia la posición del icono */
+    background-position: 95% 6px; /* position of icon */
     background-repeat: no-repeat;
-    padding: 8px 20px 8px 20px; /*cambia la posición del texto */
+    padding: 8px 20px 8px 20px; /*position of text */
     box-shadow: none;
     display: inline-block;
 }
