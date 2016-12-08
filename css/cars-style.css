@@ -15,9 +15,12 @@ input[type=text] {
     box-shadow: none;
     display: inline-block;
 }
+
 form{
-    margin-left: 32%;
-    margin-top: -40px;
+    text-align: center;
+    margin-left: auto;
+    margin right: auto;
+    margin-top: 10px;
 }
 
 /*
@@ -44,6 +47,7 @@ CARDS
 .container {
     padding: 2px 16px;
 }
+
 img{
     margin: 3%;
     width: 94%;
