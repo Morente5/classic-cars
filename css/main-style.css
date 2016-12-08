@@ -19,7 +19,7 @@ body {
 
 section {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 80px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -78,6 +78,24 @@ nav ul.topnav li.icon {
 
 nav ul.lang {  /* TODO */
     display:none;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+    margin: 0;
+    background-color: #8D3131;
+    color: #F6EDD8;
+    padding: 3px 16px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
 }
 
 #video-background {
