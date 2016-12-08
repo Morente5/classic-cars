@@ -1,0 +1,102 @@
+ input, select, textarea{
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid white;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 20px; /*position of text */
+    box-shadow: none;
+    }  
+
+    #leftholder input, select{
+        display: block;
+        vertical-align: top;
+        margin: 5%;
+        width: 80%;
+    }
+
+    #leftholder{
+        display: inline-block;
+        width: 40%;
+        overflow: hidden;
+    }
+    select{
+        color: #A9A9A9;
+    }
+    textarea{
+        height: 200px;
+        width: 40%;
+        vertical-align: top;
+        margin: 2% 5% 0% 5%;
+    }
+    form{
+        text-align: center;
+        margin-left: auto;
+        margin right: auto;
+    }
+    input,label{
+        display: inline-block;
+        margin-top: 1%;
+    }
+    label{
+        opacity: 0.7;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+    }
+    button{
+        border-radius: 4px;
+        background-color: #8D3131;
+        color: white;
+        float: right;
+        margin-right: 8%;
+        padding: 8px 20px 8px 20px; /*position of text */
+        box-shadow: none;
+        border: 1px solid #8D3131;
+    }
+/*
+TABLET
+*/
+    @media screen and (max-width: 960px) {
+        #leftholder, textarea{
+            min-width: auto;
+            max-width: auto;
+        }
+        #leftholder{
+            width: 55%;
+
+        }
+        textarea{
+            width: 45%;
+            margin: 0% 0% 0% 1%;
+            height: 120px;
+        }
+        button{
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            float: none;
+        }
+        input{
+            margin-top: 3%;
+        }
+    }
+
+/*
+PHONE
+*/
+
+    @media screen and (max-width: 740px) {
+        textarea{
+            width: 45%;
+            margin: 0% 0% 0% 3%;
+            height: 120px;
+        }
+        #leftholder{
+            width: 55%;
+        }
+        button{
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+    }

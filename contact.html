@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="css/contact-style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="scripts/functions.js"></script>
 	<title>Classic-cars</title>
@@ -35,11 +36,12 @@
 		<h2>CONTACT</h2>
 	</header>
 	<form>
+		<div id="leftholder">
 		<input type="text" name="name" placeholder="Name">
 		<input type="tel" name="phone" placeholder="Phone">
 		<input type="email" name="email" placeholder="Email">
-		<select name="provincia">
-			<option value='0'>Provincia</option>
+		<select name="city">
+			<option value='0'>City</option>
 			<option value='2'>Álava</option>
 			<option value='3'>Albacete</option>
 			<option value='4'>Alicante/Alacant</option>
@@ -93,9 +95,15 @@
 			<option value='52'>Zamora</option>
 			<option value='53'>Zaragoza</option>
 		</select>
+		</div>
+		<textarea name="message" placeholder="Message"></textarea>
+		<br>
 		<input type="checkbox" name="privacy" placeholder="Name">
 		<label for="privacy">I accept the Privacy Policy</label>
-		<textarea name="message" placeholder="Message"></textarea>
+		<br>
+		<br>
+		<button>Submit</button>
+
 	</form>
 </section>
 
