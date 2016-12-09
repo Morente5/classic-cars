@@ -1,102 +1,105 @@
- input, select, textarea{
+form {
+    padding: 0 7%;
+    text-align: center;
+    display: block;
+}
+
+form * {
+    box-sizing: content-box
+}
+
+form #leftholder, form #rightholder {
+    display: inline-block;
+    width: 45%;
+    /*Fixes 20px offset*/
+    margin-right: 15px;
+    margin-left: -25px;
+}
+
+form #leftholder {
+    float: left;
+}
+
+form #rightholder {
+    float: right;
+}
+
+input, select, textarea {
+    display: block;
     border-radius: 4px;
     font-size: 14px;
-    border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid white;
     background-color: white;
     background-repeat: no-repeat;
     padding: 8px 20px 8px 20px; /*position of text */
     box-shadow: none;
-    }  
+    margin: 5px 5px 25px 5px;
+    width: 100%;
+        -ms-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+            box-sizing: content-box;
+    color: #381313;
+} 
 
-    #leftholder input, select{
+input[type="checkbox"], label {
+    width: initial;
+    display: inline-block;
+    margin: 5px 5px 25px 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #8D3131;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #8D3131;
+    outline: none;
+}
+
+form #policy {
+    float: left;
+    vertical-align: middle;
+}
+
+button {
+    vertical-align: middle;
+    float: right;
+    margin-right: -48px;
+    margin-top: -5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    background-color: #8D3131;
+    color: #faf6eb;
+    padding: 8px 20px 8px 20px; /*position of text */
+    box-shadow: none;
+    border: 2px solid #8D3131;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+label{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+TABLET & PHONE
+*/
+@media screen and (max-width: 1050px) {
+    form #leftholder, form #rightholder {
         display: block;
-        vertical-align: top;
-        margin: 5%;
-        width: 80%;
+        float: left;
+        width: 100%;
     }
-
-    #leftholder{
-        display: inline-block;
-        width: 40%;
-        overflow: hidden;
-    }
-    select{
-        color: #A9A9A9;
-    }
-    textarea{
-        height: 200px;
-        width: 40%;
-        vertical-align: top;
-        margin: 2% 5% 0% 5%;
-    }
-    form{
-        text-align: center;
-        margin-left: auto;
-        margin right: auto;
-    }
-    input,label{
-        display: inline-block;
-        margin-top: 1%;
-    }
-    label{
-        opacity: 0.7;
-        font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-    }
-    button{
-        border-radius: 4px;
-        background-color: #8D3131;
-        color: white;
-        float: right;
-        margin-right: 8%;
-        padding: 8px 20px 8px 20px; /*position of text */
-        box-shadow: none;
-        border: 1px solid #8D3131;
-    }
-/*
-TABLET
-*/
-    @media screen and (max-width: 960px) {
-        #leftholder, textarea{
-            min-width: auto;
-            max-width: auto;
-        }
-        #leftholder{
-            width: 55%;
-
-        }
-        textarea{
-            width: 45%;
-            margin: 0% 0% 0% 1%;
-            height: 120px;
-        }
-        button{
-            margin-right: auto;
-            margin-left: auto;
-            text-align: center;
-            float: none;
-        }
-        input{
-            margin-top: 3%;
-        }
-    }
-
-/*
-PHONE
-*/
-
-    @media screen and (max-width: 740px) {
-        textarea{
-            width: 45%;
-            margin: 0% 0% 0% 3%;
-            height: 120px;
-        }
-        #leftholder{
-            width: 55%;
-        }
-        button{
-            margin-right: auto;
-            margin-left: auto;
-            text-align: center;
-        }
-    }
+}
