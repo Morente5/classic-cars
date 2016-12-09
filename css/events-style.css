@@ -18,10 +18,10 @@ section article:hover {
 }
 
 section article img {
-    margin: 10px;
+    margin: 1%;
     vertical-align:top;
     display: inline-block;
-    width: 40%;
+    width: 45%;
 }
 
 section article img:hover {
@@ -31,7 +31,7 @@ section article img:hover {
 section article .wrapper {
     display: inline-block;
     vertical-align:top;
-    width: 54%;
+    width: 52%;
 }
 
 section article p {
