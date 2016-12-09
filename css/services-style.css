@@ -28,6 +28,7 @@ section .service img:hover {
 
 section .service p {
 	margin: 0px 20px 20px 20px;
+    font-size: 1em;
 }
 
 section .service hr{
