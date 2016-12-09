@@ -1,0 +1,39 @@
+section .rightwrapper, section .leftwrapper {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+    width: 48%;
+    margin-left: 1%;
+    vertical-align: top;
+}
+
+section .lefttwrapper {
+	float: left;
+}
+
+section .righttwrapper {
+	float: right;
+}
+
+section #map {
+	box-sizing: border-box;
+	border: 10px solid white;
+	height: 400px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+section #map:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/*
+TABLET & PHONE
+*/
+@media screen and (max-width: 1050px) {
+    form .leftwrapper, form .rightwrapper {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+}
