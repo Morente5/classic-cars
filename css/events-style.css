@@ -1,17 +1,31 @@
-article {
-    overflow: hidden;
-    margin:1%;
+section article {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    margin: 5px;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
 }
-img {
+
+section article:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section article img {
     width: 40%;
-    height: 25%;
-    float: left;
+    height: auto;
     margin: 1%;
-    border-radius: 10px;
+    float: left;
+    display: inline-block;
 }
-img#rightside{
+
+section article .wrapper{
     float: right;
+    display: inline-block;   
+    width: 50%;
 }
+
 hr{
     margin-left: 1%;
     width: 55%;
