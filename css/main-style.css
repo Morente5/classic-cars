@@ -82,7 +82,6 @@ nav ul.topnav li a {
     text-align: center;
     padding: 30px 25px;
     text-decoration: none;
-    transition: 0.3s;
     font-size: 20px;
     font-family: 'Bazar';
     width: 80px;
@@ -98,13 +97,13 @@ nav ul.topnav li a:hover {
 }
 
 nav ul.topnav li a.home {
+    height: 81.6px;
     width: 200px;
     padding: 0;
     margin:0;
 }
 
 nav ul.topnav li a.home img{
-    display: flex;
     margin: 0;
     height: 81.6px;
     width: 200px;
@@ -202,13 +201,15 @@ footer ul#social li a i.fa-youtube:hover {
     }
     nav ul.topnav li.icon {
         float: right;
-        display: inline-block;
+        display: flex;
         position: absolute;
         right: 0;
         top: 0;
+        width: 80px;
     }
 
     nav ul.topnav li a.home {
+        height: 61.6px;
         width: 140px;
     }
 
@@ -217,7 +218,10 @@ footer ul#social li a i.fa-youtube:hover {
         width: 140px;
     }
     
-    nav ul.topnav.responsive {position: relative;}
+    nav ul.topnav.responsive {
+        position: relative;
+    }
+
     nav ul.topnav.responsive li.icon {
         position: absolute;
         right: 0;
@@ -228,6 +232,7 @@ footer ul#social li a i.fa-youtube:hover {
         float: none;
         display: inline;
     }
+
     nav ul.topnav.responsive li a {
         display: block;
         text-align: left;
@@ -259,7 +264,7 @@ footer ul#social li a i.fa-youtube:hover {
     }
 
     footer ul#social li {
-        padding:3px
+        padding: 3px;
     }
 
     footer ul#social li a i {
