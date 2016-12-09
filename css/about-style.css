@@ -1,22 +1,26 @@
+section .wrapper {
+	display: flex;
+}
+
 section .rightwrapper, section .leftwrapper {
-	margin: 0;
+	margin: 10px;
 	padding: 0;
 	display: inline-block;
-    width: 48%;
-    margin-left: 1%;
+    width: 47%;
+    margin-left: 3%;
+    margin-right: 3%;
     vertical-align: top;
 }
 
-section .lefttwrapper {
+section .leftwrapper {
 	float: left;
 }
 
-section .righttwrapper {
+section .rightwrapper {
 	float: right;
 }
 
 section #map {
-	box-sizing: border-box;
 	border: 10px solid white;
 	height: 400px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -31,9 +35,18 @@ section #map:hover {
 TABLET & PHONE
 */
 @media screen and (max-width: 1050px) {
-    form .leftwrapper, form .rightwrapper {
+	section .wrapper {
+		display: block;
+	}
+
+    section .leftwrapper, section .rightwrapper {
         display: block;
         float: left;
-        width: 100%;
+        width: 94%;
     }
+
+    section #map {
+		margin-bottom: 40px;
+	}
+
 }
