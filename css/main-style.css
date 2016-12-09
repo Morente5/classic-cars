@@ -45,6 +45,20 @@ h2 {
     font-size: 4em;
 }
 
+h3 {
+    font-size: 2em;
+    font-family: 'Bazar', sans-serif;
+}
+
+h4 {
+    font-family: 'Bazar', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
 /*
 NAV
 */
@@ -183,7 +197,7 @@ footer ul#social li a i.fa-youtube:hover {
     nav ul.topnav li:not(:nth-child(3)) {
         display: none;
     }
-    nav ul.topnav li a {
+    nav ul.topnav li a{
         padding: 20px 30px;
     }
     nav ul.topnav li.icon {
@@ -209,6 +223,7 @@ footer ul#social li a i.fa-youtube:hover {
         right: 0;
         top: 0;
     }
+    
     nav ul.topnav.responsive li {
         float: none;
         display: inline;
