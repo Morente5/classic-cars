@@ -16,13 +16,17 @@ section .leftwrapper {
 	float: left;
 }
 
+section .leftwrapper p {
+	font-size: 1em;
+}
+
 section .rightwrapper {
 	float: right;
 }
 
 section #map {
 	border: 10px solid white;
-	height: 400px;
+	height: 550px; /*500*/
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
