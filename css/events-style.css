@@ -1,11 +1,16 @@
+section {
+    text-align: center;
+}
+
 section article {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: white;
     margin: 5px;
     margin-top: 20px;
-    width: 100%;
-    display: block;
+    width: 98%;
+    display: block;
+    vertical-align:top;
 }
 
 section article:hover {
@@ -13,31 +18,59 @@ section article:hover {
 }
 
 section article img {
-    width: 40%;
-    height: auto;
-    margin: 1%;
-    float: left;
+    margin: 10px;
+    vertical-align:top;
     display: inline-block;
+    width: 40%;
 }
 
-section article .wrapper{
-    float: right;
-    display: inline-block;   
-    width: 50%;
+section article img:hover {
+    opacity: 0.7;
 }
 
-hr{
-    margin-left: 1%;
-    width: 55%;
-    background-color: #8D3131 ;
+section article .wrapper {
+    display: inline-block;
+    vertical-align:top;
+    width: 54%;
+}
+
+section article p {
+    font-size: 1em;
+}
+
+section article hr{
+    background-color: #8D3131;
     height: 2px;
 }
-h4{
-    margin-left: 1%;
-    font-family: 'Bazar', sans-serif;
+
+@media screen and (max-width: 1050px) {
+    section article {
+        display: inline-block;
+        width: 45%;
+    }
+
+    section article img {
+        margin: 3%;
+        width: 94%;
+    }
+
+    section article .wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    section article hr{
+        width: 100%;
+    }
+
+    section article p {
+        margin: 3%;
+        width: 94%;
+    }
 }
-p{
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
+
+@media screen and (max-width: 760px) {
+    section article {
+        width: 98%;
+    }
 }
