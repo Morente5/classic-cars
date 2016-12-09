@@ -34,18 +34,6 @@ section #map:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* HIDE GOOGLE MAPS TEXT */
-.gmnoprint:not(.gm-bundled-control) {
-    display: none;
-}
-
-.gm-bundled-control .gmnoprint {
-    display: block;
-}
-
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
-a[href^="https://www.google.com/maps"]{display:none !important}
 
 /*
 TABLET & PHONE
