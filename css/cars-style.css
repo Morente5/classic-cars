@@ -2,11 +2,11 @@
 SEARCH BOX
 */
 
-section input[type=text] {
+section input[type="search"] {
     width: 50%;
     border-radius: 4px;
     font-size: 14px;
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: white;
     background-image: url(http://www.w3schools.com/howto/searchicon.png);
     background-position: 95% 6px; /* position of icon */
@@ -14,6 +14,11 @@ section input[type=text] {
     padding: 8px 20px 8px 20px; /*position of text */
     box-shadow: none;
     display: inline-block;
+}
+
+section input[type="search"]:focus {
+    border: 2px solid #8D3131;
+    outline: none;
 }
 
 section form{
