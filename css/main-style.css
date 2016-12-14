@@ -89,7 +89,15 @@ nav ul.topnav li a {
     font-size: 20px;
     font-family: 'Bazar';
     width: 80px;
-    vertical-align: top
+    vertical-align: top;
+
+    /*
+    Animation
+    */
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
 }
 
 nav ul.topnav li:not(:nth-child(3)) a.active {
@@ -158,6 +166,16 @@ footer ul#social li {;
 }
 
 footer ul#social li a i{
+    /*
+    Animation
+    */
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 2;
+
     margin: 5px;
     font-size: 2em;
     color: #faf6eb;

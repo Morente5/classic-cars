@@ -22,9 +22,18 @@ section article img {
     vertical-align:top;
     display: inline-block;
     width: 45%;
+    height: 45%;
 }
 
 section article img:hover {
+    /*
+    Animation
+    */
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    
     opacity: 0.7;
 }
 
