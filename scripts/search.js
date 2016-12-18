@@ -1,4 +1,4 @@
-window.onload = () => {
+function loadSearch() {
 	var search = document.querySelector('input[name="search"]');
 	search.addEventListener('input', function() {
 		var cards = document.getElementsByClassName('card');
@@ -19,4 +19,7 @@ window.onload = () => {
 			}
 		}
 	});
-};
+}
+
+
+loadSearch();

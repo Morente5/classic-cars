@@ -60,6 +60,91 @@ section img{
     width: 94%;
 }
 
+
+/*
+POP-UP IMAGES
+*/
+
+section .myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .myImg:hover {opacity: 0.7;}
+
+
+section .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(56, 19, 19, 0.9);
+}
+
+/*Image*/
+section .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/*Text*/
+section .caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #FFF;
+    padding: 10px 0;
+    height: 150px;
+    font-family: 'Bazar', sans-serif;
+    text-align: center;
+    text-shadow: 1px 2px #000;
+}
+
+section .modal-content, section .caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+section .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+section .close:hover,
+section .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /*
 TABLET
 */
@@ -67,6 +152,10 @@ TABLET
 @media screen and (max-width: 1050px) {
     section .card {
         width: 45%;
+    }
+
+    section .modal-content {
+        width: 100%;
     }
 }
 
